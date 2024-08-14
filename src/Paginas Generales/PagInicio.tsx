@@ -6,7 +6,7 @@ const PagInicio: React.FC = () => {
   return (
     <div className="PagInicio-Container">
       <header className="PagInicio-Header">
-        <img src="logo.jpg" alt="Mi Marca" className="PagInicio-Logo" /> {/* Ruta directa para el logo */}
+        <img src="/path-to-your-image/logo.png" alt="Mi Marca" className="PagInicio-Logo" /> {/* Ruta directa para el logo */}
         <h1 className="PagInicio-Title">Página de Joseph Fiter</h1>
       </header>
       <div className="PagInicio-ButtonContainer">

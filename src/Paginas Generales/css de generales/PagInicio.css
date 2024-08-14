@@ -1,15 +1,24 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita el scroll en toda la página */
+  height: 100%; /* Asegura que el body ocupe todo el alto disponible */
+}
+
 .PagInicio-Container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #121212;
-  color: #FFD700;
+  color: #003366; /* Azul marino */
   min-height: 100vh;
   padding: 20px;
   margin: 0;
   background-image: url('/bacj.jpg'); /* Añade la ruta de tu imagen de fondo */
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Fija el fondo para que no se mueva con el scroll */
+  overflow: hidden; /* Evita el scroll dentro del contenedor */
 }
 
 .PagInicio-Header {
@@ -18,31 +27,41 @@
   align-items: center;
   width: 100%;
   padding: 10px 20px; /* Ajusta el padding según el tamaño del header */
-  background-color: #1f1f1f;
+  background-color: rgba(31, 31, 31, 0.8); /* Fondo negro con 80% de opacidad */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   box-shadow: 0 4px 2px -2px gray;
+  box-sizing: border-box; /* Incluye padding y border en el width y height */
+  height: 60px; /* Ajusta el tamaño del header según sea necesario */
 }
 
 .PagInicio-Logo {
   width: 80px; /* Ajusta este tamaño según sea necesario */
   height: auto;
+  cursor: pointer; /* Indica que el logo es interactivo */
 }
 
 .PagInicio-Title {
-  font-size: 2rem; /* Ajusta el tamaño del título según sea necesario */
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  font-size: 1.5rem; /* Ajusta el tamaño del título según sea necesario */
+  text-align: right; /* Alinea el texto a la derecha */
+  color: #ffffff; /* Blanco */
+  margin: 0; /* Elimina márgenes adicionales */
+  padding: 0 20px; /* Añade padding a los lados para evitar que el texto toque el borde */
+  white-space: nowrap; /* Evita que el texto se envuelva */
+  cursor: pointer; /* Indica que el texto es interactivo */
 }
 
 .PagInicio-ButtonContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas */
+  justify-content: flex-start; /* Alinea los botones a la izquierda */
   margin-top: 80px; /* Ajusta el margen superior para compensar el header fijo */
+  width: 100%; /* Ajusta el ancho para llenar el contenedor */
+  max-width: 500px; /* Limita el ancho máximo del contenedor de botones */
+  margin-left: 70px; /* Añade margen izquierdo */
+  margin-right: auto; /* Centra el contenedor horizontalmente */
 }
 
 .PagInicio-Button {
@@ -50,8 +69,8 @@
   align-items: center;
   margin: 10px;
   padding: 10px;
-  color: #121212;
-  background-color: #FFD700;
+  color: #ffffff; /* Texto en blanco para contraste */
+  background-color: #003366; /* Azul marino */
   background-size: cover;
   background-position: center;
   text-decoration: none;
@@ -59,34 +78,37 @@
   font-size: 1.2rem;
   text-align: center;
   height: 50px; /* Ajusta el tamaño del botón */
-  width: 200px; /* Ajusta el tamaño del botón */
+  width: calc(50% - 20px); /* Ancho de los botones para que haya dos por fila */
   background-repeat: no-repeat;
+  box-sizing: border-box; /* Incluye padding y border en el width y height */
 }
 
 .PagInicio-Button:hover {
-  background-color: #ffa500;
+  background-color: #002244; /* Azul marino más oscuro para el hover */
 }
 
 @media (max-width: 768px) {
-  .PagInicio-Title {
-    font-size: 1.5rem; /* Ajusta el tamaño del título para pantallas más pequeñas */
-    margin-top: 60px; /* Ajusta el margen superior para compensar el header fijo */
+  .PagInicio-ButtonContainer {
+    justify-content: center; /* Centra los botones horizontalmente en pantallas más pequeñas */
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
   }
 
   .PagInicio-Button {
     font-size: 1rem;
+    width: calc(50% - 20px); /* Ajusta el tamaño del botón */
+    margin: 15px; /* Mayor margen entre botones en pantallas pequeñas */
   }
 }
 
 @media (max-width: 480px) {
   .PagInicio-Title {
-    font-size: 1.2rem; /* Ajusta el tamaño del título para pantallas más pequeñas */
+    font-size: 1rem; /* Ajusta el tamaño del título para pantallas más pequeñas */
     margin-top: 40px; /* Ajusta el margen superior para compensar el header fijo */
   }
 
   .PagInicio-Button {
     font-size: 0.8rem;
     padding: 8px;
-    width: 150px; /* Ajusta el tamaño del botón */
+    width: calc(50% - 20px); /* Ajusta el tamaño del botón */
   }
 }
