@@ -24,7 +24,7 @@ html, body {
 .PagInicio-Header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* Alinea los elementos verticalmente al centro */
   width: 100%;
   padding: 10px 20px; /* Ajusta el padding según el tamaño del header */
   background-color: rgba(31, 31, 31, 0.8); /* Fondo negro con 80% de opacidad */
@@ -34,18 +34,17 @@ html, body {
   z-index: 1000;
   box-shadow: 0 4px 2px -2px gray;
   box-sizing: border-box; /* Incluye padding y border en el width y height */
-  height: 60px; /* Ajusta el tamaño del header según sea necesario */
+  height: 60px; /* Asegúrate de que el header tenga una altura */
 }
 
+
 .PagInicio-Logo {
-  width: 80px; /* Ajusta este tamaño según sea necesario */
+  width: 50px; /* Ajusta este tamaño según sea necesario */
   height: auto;
   cursor: pointer; /* Indica que el logo es interactivo */
 }
-
 .PagInicio-Title {
   font-size: 1.5rem; /* Ajusta el tamaño del título según sea necesario */
-  text-align: right; /* Alinea el texto a la derecha */
   color: #ffffff; /* Blanco */
   margin: 0; /* Elimina márgenes adicionales */
   padding: 0 20px; /* Añade padding a los lados para evitar que el texto toque el borde */
@@ -103,7 +102,6 @@ html, body {
 @media (max-width: 480px) {
   .PagInicio-Title {
     font-size: 1rem; /* Ajusta el tamaño del título para pantallas más pequeñas */
-    margin-top: 40px; /* Ajusta el margen superior para compensar el header fijo */
   }
 
   .PagInicio-Button {
