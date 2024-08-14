@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Evita el scroll en toda la página */
+  overflow: hidden; /* Evita el scroll en toda la página por defecto */
   height: 100%; /* Asegura que el body ocupe todo el alto disponible */
 }
 
@@ -14,11 +14,11 @@ html, body {
   min-height: 100vh;
   padding: 20px;
   margin: 0;
-  background-image: url('/bacj.jpg'); /* Añade la ruta de tu imagen de fondo */
+  background-image: url('./bacj.jpg'); /* Añade la ruta de tu imagen de fondo */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Fija el fondo para que no se mueva con el scroll */
-  overflow: hidden; /* Evita el scroll dentro del contenedor */
+  overflow: hidden; /* Evita el scroll dentro del contenedor por defecto */
 }
 
 .PagInicio-Header {
@@ -34,15 +34,14 @@ html, body {
   z-index: 1000;
   box-shadow: 0 4px 2px -2px gray;
   box-sizing: border-box; /* Incluye padding y border en el width y height */
-  height: 60px; /* Asegúrate de que el header tenga una altura */
 }
-
 
 .PagInicio-Logo {
   width: 50px; /* Ajusta este tamaño según sea necesario */
   height: auto;
   cursor: pointer; /* Indica que el logo es interactivo */
 }
+
 .PagInicio-Title {
   font-size: 1.5rem; /* Ajusta el tamaño del título según sea necesario */
   color: #ffffff; /* Blanco */
@@ -50,50 +49,66 @@ html, body {
   padding: 0 20px; /* Añade padding a los lados para evitar que el texto toque el borde */
   white-space: nowrap; /* Evita que el texto se envuelva */
   cursor: pointer; /* Indica que el texto es interactivo */
+  display: flex; /* Usa flexbox para centrar el texto verticalmente */
+  align-items: center; /* Centra verticalmente el texto */
 }
 
 .PagInicio-ButtonContainer {
   display: flex;
   flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas */
   justify-content: flex-start; /* Alinea los botones a la izquierda */
-  margin-top: 80px; /* Ajusta el margen superior para compensar el header fijo */
+  margin-top: 170px; /* Ajusta el margen superior para compensar el header fijo */
   width: 100%; /* Ajusta el ancho para llenar el contenedor */
   max-width: 500px; /* Limita el ancho máximo del contenedor de botones */
   margin-left: 70px; /* Añade margen izquierdo */
   margin-right: auto; /* Centra el contenedor horizontalmente */
+  overflow-y: auto; /* Permite el scroll vertical si es necesario */
+  max-height: calc(100vh - 170px); /* Asegura que el contenedor de botones no se desborde más allá del viewport */
 }
 
 .PagInicio-Button {
   display: flex;
   align-items: center;
+  justify-content: center; /* Centra la imagen dentro del botón */
   margin: 10px;
-  padding: 10px;
-  color: #ffffff; /* Texto en blanco para contraste */
-  background-color: #003366; /* Azul marino */
-  background-size: cover;
-  background-position: center;
-  text-decoration: none;
+  padding: 0; /* Elimina el padding para que la imagen ocupe todo el botón */
+  color: transparent; /* Hace que el texto no sea visible */
+  background-color: #003366; /* Azul marino (puedes eliminar esto si el botón ya es una imagen de fondo) */
+  border: none; /* Elimina el borde del botón */
   border-radius: 5px;
   font-size: 1.2rem;
   text-align: center;
   height: 50px; /* Ajusta el tamaño del botón */
   width: calc(50% - 20px); /* Ancho de los botones para que haya dos por fila */
-  background-repeat: no-repeat;
   box-sizing: border-box; /* Incluye padding y border en el width y height */
+  overflow: hidden; /* Asegura que la imagen no se desborde del botón */
+}
+
+.PagInicio-Button img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del botón */
+  height: 100%; /* Asegura que la imagen ocupe todo el alto del botón */
+  object-fit: cover; /* Mantiene la proporción de la imagen dentro del botón */
 }
 
 .PagInicio-Button:hover {
   background-color: #002244; /* Azul marino más oscuro para el hover */
 }
 
+/* Media queries */
 @media (max-width: 768px) {
+  .PagInicio-Container {
+    overflow: auto; /* Permite el scroll en pantallas más pequeñas */
+  }
+
   .PagInicio-ButtonContainer {
     justify-content: center; /* Centra los botones horizontalmente en pantallas más pequeñas */
     margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+    margin-top: 100px; /* Reduce el margen superior en pantallas más pequeñas */
   }
 
   .PagInicio-Button {
     font-size: 1rem;
+    height: 70px; /* Aumenta el tamaño del botón */
     width: calc(50% - 20px); /* Ajusta el tamaño del botón */
     margin: 15px; /* Mayor margen entre botones en pantallas pequeñas */
   }
@@ -106,7 +121,9 @@ html, body {
 
   .PagInicio-Button {
     font-size: 0.8rem;
+    height: 90px; /* Aumenta aún más el tamaño del botón en pantallas más pequeñas */
     padding: 8px;
     width: calc(50% - 20px); /* Ajusta el tamaño del botón */
+    margin: 20px; /* Mayor margen entre botones en pantallas más pequeñas */
   }
 }
