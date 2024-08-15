@@ -27,10 +27,14 @@ const PagInicio: React.FC = () => {
         <Link to="/rewind" className="PagInicio-Button">
           <img src="./rewindboton.png" alt="Rewind DM" />
         </Link>
-        <Link to="/mas" className="PagInicio-Button">
+        <a
+          href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+          className="PagInicio-Button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="./masboton.png" alt="Más" />
-        </Link>
-     
+        </a>
       </div>
     </div>
   );
