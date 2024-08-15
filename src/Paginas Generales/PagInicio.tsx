@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './css de generales/PagInicio.css';
-import MyComponent from '../componentes/Mycomponent';
 
 const PagInicio: React.FC = () => {
   return (
@@ -31,7 +30,7 @@ const PagInicio: React.FC = () => {
         <Link to="/mas" className="PagInicio-Button">
           <img src="./masboton.png" alt="Más" />
         </Link>
-        <MyComponent></MyComponent>
+     
       </div>
     </div>
   );
