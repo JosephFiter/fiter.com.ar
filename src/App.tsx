@@ -8,7 +8,7 @@ import Rewind from './Paginas Generales/Rewind';
 import Mas from './Paginas Generales/Mas';
 import YEnElDescuento from './Paginas Generales/Paginas de Juegos/Yeneldescuento';
 import YEnElEntretiempo from './Paginas Generales/Paginas de Juegos/Yenelentretiempo';
-import Elespia1 from './Paginas Generales/Paginas de Juegos/elespia';
+import Elespia1 from './Paginas Generales/Paginas de Juegos/Elespia';
 
 
 const App: React.FC = () => {
