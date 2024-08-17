@@ -14,8 +14,9 @@ const Juegos: React.FC = () => {
           <img src="/botonVolver.png" alt="Mensajes" className='Juegos-Volver' />
         </Link>
       </header>
-      <BotonesJuegos />
-      
+      <div className="Juegos-Content">
+        <BotonesJuegos />
+      </div>
     </div>
   );
 }

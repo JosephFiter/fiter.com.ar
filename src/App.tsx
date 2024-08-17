@@ -8,6 +8,7 @@ import Rewind from './Paginas Generales/Rewind';
 import Mas from './Paginas Generales/Mas';
 import YEnElDescuento from './Paginas Generales/Paginas de Juegos/Yeneldescuento';
 import YEnElEntretiempo from './Paginas Generales/Paginas de Juegos/Yenelentretiempo';
+import Elespia1 from './Paginas Generales/Paginas de Juegos/elespia';
 
 
 const App: React.FC = () => {
@@ -22,6 +23,8 @@ const App: React.FC = () => {
         <Route path="/mas" element={<Mas />} />
         <Route path="/juegos/YEnElDescuento" element={<YEnElDescuento />} />
         <Route path="/juegos/YEnElEntretiempo" element={<YEnElEntretiempo />} />
+        <Route path="/juegos/ElEspiaDelFutbol" element={<Elespia1 />} />
+
 
       </Routes>
     </Router>

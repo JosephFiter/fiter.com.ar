@@ -14,11 +14,25 @@
     overflow: hidden;
     margin-top: 0%;
   }
-  
+  .espia-Container {
+    padding: 20px;
+    color: azure;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 0%;
+  }
 .titulos-descuento{
     font-size: 25px;
     color: aliceblue;
     width: 80%;
+}
+.titulos-descuento3{
+  font-size: 25px;
+  color: aliceblue;
+  width: 80%;
+  margin-top: -1%;
+
 }
 
 .titulos-descuento2{

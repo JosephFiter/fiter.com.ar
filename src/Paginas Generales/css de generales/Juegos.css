@@ -1,20 +1,24 @@
-.Juegos-Volver{
+.Juegos-Volver {
     height: 4vw;
     width: auto;
-}
-
-.Juegos-Fondo{
-    height: 100vh;
+  }
+  
+  .Juegos-Fondo {
+    min-height: 100vh;
     background-image: url('/fondojuegos.png'); /* Añade la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Fija el fondo para que no se mueva con el scroll */
-    overflow: hidden; /* Evita el scroll dentro del contenedor por defecto */
+  }
   
-}
+  .Juegos-Content {
+    padding: 20px; /* Añade padding para el contenido */
 
-@media (max-width: 768px) {
-    .Juegos-Volver{
+  }
+  
+  @media (max-width: 768px) {
+    .Juegos-Volver {
       height: 12vw; /* Ajusta el height para pantallas pequeñas */
     }
-}
+  }
+  

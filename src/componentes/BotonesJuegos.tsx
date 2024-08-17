@@ -7,15 +7,13 @@ const juegos = [
   { nombre: 'YEnElEntretiempo', imagen: './yenelentretiempoboton.png' },
   { nombre: 'ElEspiaDelFutbol', imagen: './espiaboton.png' },
   { nombre: 'DoNotEnter', imagen: './donotboton.png' },
-
-
   // Añade más juegos según sea necesario
 ];
 
 const BotonesJuegos: React.FC = () => {
   return (
     <div className="BotonesJuegos-Container">
-      <h2 className='BotonesJuegos-Titulo'>Estos son los juegos de Industrias Fiter </h2>
+      <h2 className='BotonesJuegos-Titulo'>Estos son los juegos de Industrias Fiter</h2>
       <div className="BotonesJuegos-Botones">
         {juegos.map((juego) => (
           <Link to={`/juegos/${juego.nombre}`} key={juego.nombre} className="BotonesJuegos-Boton">
