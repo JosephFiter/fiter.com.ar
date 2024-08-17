@@ -1,5 +1,5 @@
 .GameInfo-Container {
-    background-color: #fff;
+    background-color: #323232;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -8,6 +8,15 @@
   .GameInfo-Logo {
     width: 100px;
     height: auto;
+  }
+  .tituloinfo{
+    margin-top: 0px;
+    margin-bottom: 1%;
+    color: aliceblue;
+  }
+
+  .ponerblanco{
+    color: aliceblue;
   }
   
   .GameInfo-PlayButton {
@@ -21,6 +30,14 @@
     cursor: pointer;
   }
   
+.tituloinfodescuento{
+  color: aliceblue;
+}
+.tituloinfodescuento2{
+  margin-top: -2%;
+  color: aliceblue;
+}
+
   .GameInfo-PlayButton:hover {
     background-color: #45a049;
   }

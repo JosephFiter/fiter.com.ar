@@ -15,11 +15,10 @@ const GameInfoDescuento: React.FC = () => {
 
   return (
     <div className="GameInfo-Container">
-      <h1 className='tituloinfo'>Y En El Descuento</h1>
-      <img src="/logoYEnElDescuento.png" alt="Y En El Descuento Logo" className="GameInfo-Logo" />
+      <h1 className='tituloinfo'>Y En El Entretiempo</h1>
+      <img src="/logoentretiempo.png" alt="Y En El Descuento Logo" className="GameInfo-Logo" />
       <p className='ponerblanco'>
-        Y En El Descuento es el juego oficial del Discord de z4. Mata a los integrantes de z4 para conseguir sus pc y armar la pc suprema. Un juego RPG hecho con RPG Maker MV.
-      </p>
+Descubre los misterios detrás de tu baneo en el servidor de Discord de z4 en "Y En El Entretiempo", la emocionante precuela de "Y En El Descuento".    </p>
       <button onClick={openModal} className="GameInfo-PlayButton">Jugar</button>
       {isModalOpen && <GameModal closeModal={closeModal} />}
     </div>

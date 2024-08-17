@@ -6,7 +6,26 @@
     overflow: hidden;
     margin-top: 0%;
   }
+  .YEnElentretiempo-Container {
+    padding: 20px;
+    background: url('/fondoentre.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 0%;
+  }
   
+.titulos-descuento{
+    font-size: 25px;
+    color: aliceblue;
+    width: 80%;
+}
+
+.titulos-descuento2{
+    font-size: 45px;
+    color: aliceblue;
+}
+
   .YEnElDescuento-Container2 {
     margin-top: 6%;
   }
@@ -70,6 +89,11 @@
       overflow: visible;
     }
     
+    .YEnElDescuento-Container2 {
+      height: calc(100vh - 60px); /* Adjust based on header height */
+      overflow-y: scroll;
+    }
+  
     .YEnElDescuento-Content {
       flex-direction: column;
       height: auto;

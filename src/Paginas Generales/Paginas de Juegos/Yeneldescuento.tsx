@@ -16,10 +16,12 @@ const YEnElDescuento: React.FC = () => {
             </Link>
           </header>
           <div className="YEnElDescuento-Content">
+          
             <div className="YEnElDescuento-Left">
-            <p>Explora varias ciudades como, Rust full vividos y Players amigos</p>
+            <p className='titulos-descuento2'>Y En El Descuento</p>
+            <p className='titulos-descuento'>Explora varias ciudades como, Rust full vividos y Players amigos</p>
               <img src="/ciudades.png" alt="Ciudades" className="YEnElDescuento-Image" />
-              <p>Peleas contra jefes, más de 6 Jefes</p>
+              <p className='titulos-descuento'>Peleas contra jefes, más de 6 Jefes</p>
 
               <img src="/jefes.png" alt="Jefes" className="YEnElDescuento-Image" />
             </div>
