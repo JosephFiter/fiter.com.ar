@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './css generales/Juegos.css';
+import './css de generales/Juegos.css';
 import BotonesJuegos from '../componentes/BotonesJuegos';
 
 const Juegos: React.FC = () => {
