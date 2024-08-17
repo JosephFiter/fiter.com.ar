@@ -1,0 +1,85 @@
+.YEnElDescuento-Container {
+    padding: 20px;
+    background: url('/fondoDescuento.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 0%;
+  }
+  
+  .YEnElDescuento-Container2 {
+    margin-top: 6%;
+  }
+  
+  .PagInicio-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .PagInicio-Logo {
+    height: 4vw;
+    width: auto;
+  }
+  
+  .Juegos-Volver {
+    height: 4vw;
+    width: auto;
+  }
+  
+  @media (max-width: 600px) {
+    .PagInicio-Logo, .Juegos-Volver {
+      height: 8vw;
+    }
+  }
+  
+  .YEnElDescuento-Content {
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust height based on header */
+  }
+  
+  .YEnElDescuento-Left {
+    flex: 1;
+    margin: 10px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .YEnElDescuento-Left::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+  
+  .YEnElDescuento-Image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .YEnElDescuento-Right {
+    flex: 0 0 300px;
+    margin: 10px;
+    position: sticky;
+    top: 60px; /* Adjust based on header height */
+  }
+  
+  @media (max-width: 600px) {
+    .YEnElDescuento-Container {
+      height: auto;
+      overflow: visible;
+    }
+    
+    .YEnElDescuento-Content {
+      flex-direction: column;
+      height: auto;
+      overflow-y: auto;
+    }
+    
+    .YEnElDescuento-Right {
+      position: relative;
+      margin-top: 20px;
+      order: -1;
+    }
+  }
+  

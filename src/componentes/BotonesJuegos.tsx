@@ -5,7 +5,10 @@ import './css componentes/BotonesJuegos.css';
 const juegos = [
   { nombre: 'YEnElDescuento', imagen: './yeneldescuentoboton.png' },
   { nombre: 'YEnElEntretiempo', imagen: './yenelentretiempoboton.png' },
-  { nombre: 'Juego3', imagen: './juego3.png' },
+  { nombre: 'ElEspiaDelFutbol', imagen: './espiaboton.png' },
+  { nombre: 'DoNotEnter', imagen: './donotboton.png' },
+
+
   // Añade más juegos según sea necesario
 ];
 

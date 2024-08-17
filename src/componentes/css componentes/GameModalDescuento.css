@@ -1,0 +1,37 @@
+.GameModal-Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .GameModal-Content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .GameModal-Logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .GameModal-Button {
+    background: none;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .GameModal-Button img {
+    width: 50px;
+    height: auto;
+  }
+  

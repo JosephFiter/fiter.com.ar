@@ -6,6 +6,8 @@ import Juegos from './Paginas Generales/Juegos';
 import Mods from './Paginas Generales/Mods';
 import Rewind from './Paginas Generales/Rewind';
 import Mas from './Paginas Generales/Mas';
+import YEnElDescuento from './Paginas Generales/Paginas de Juegos/Yeneldescuento';
+
 
 const App: React.FC = () => {
   return (
@@ -17,6 +19,8 @@ const App: React.FC = () => {
         <Route path="/mods" element={<Mods />} />
         <Route path="/rewind" element={<Rewind />} />
         <Route path="/mas" element={<Mas />} />
+        <Route path="/juegos/YEnElDescuento" element={<YEnElDescuento />} />
+
       </Routes>
     </Router>
   );

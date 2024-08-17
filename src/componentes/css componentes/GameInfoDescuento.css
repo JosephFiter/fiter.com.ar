@@ -1,0 +1,27 @@
+.GameInfo-Container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .GameInfo-Logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .GameInfo-PlayButton {
+    background-color: #4CAF50;
+    width: 80%;
+    height: 100%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 0;
+    cursor: pointer;
+  }
+  
+  .GameInfo-PlayButton:hover {
+    background-color: #45a049;
+  }
+  
