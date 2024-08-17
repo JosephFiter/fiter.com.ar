@@ -1,0 +1,28 @@
+.BotonesJuegos-Container {
+    margin-top: 9.5%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .BotonesJuegos-Titulo{
+    color: aliceblue;
+  }
+  
+  .BotonesJuegos-Botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .BotonesJuegos-Boton {
+    margin: 10px 0;
+  }
+  
+  .BotonesJuegos-Boton img {
+    width: 100px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto;
+    cursor: pointer;
+    border-radius: 5%;
+
+  }
+  

@@ -3,8 +3,18 @@
     width: auto;
 }
 
+.Juegos-Fondo{
+    height: 100vh;
+    background-image: url('/fondojuegos.png'); /* Añade la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fija el fondo para que no se mueva con el scroll */
+    overflow: hidden; /* Evita el scroll dentro del contenedor por defecto */
+  
+}
+
 @media (max-width: 768px) {
-    .PagInicio-Volver img {
-      height: 8vw; /* Ajusta el height para pantallas pequeñas */
+    .Juegos-Volver{
+      height: 12vw; /* Ajusta el height para pantallas pequeñas */
     }
 }
