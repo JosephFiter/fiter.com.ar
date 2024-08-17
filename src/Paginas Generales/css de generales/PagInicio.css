@@ -53,6 +53,10 @@ html, body {
   align-items: center; /* Centra verticalmente el texto */
 }
 
+
+
+
+
 .PagInicio-ButtonContainer {
   display: flex;
   flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas */

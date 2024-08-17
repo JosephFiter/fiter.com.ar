@@ -1,0 +1,10 @@
+.Juegos-Volver{
+    height: 4vw;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .PagInicio-Volver img {
+      height: 8vw; /* Ajusta el height para pantallas pequeñas */
+    }
+}
