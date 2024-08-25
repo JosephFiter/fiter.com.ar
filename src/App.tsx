@@ -9,7 +9,7 @@ import Mas from './Paginas Generales/Mas';
 import YEnElDescuento from './Paginas Generales/Paginas de Juegos/Yeneldescuento';
 import YEnElEntretiempo from './Paginas Generales/Paginas de Juegos/Yenelentretiempo';
 import Elespia1 from './Paginas Generales/Paginas de Juegos/Elespia';
-
+import DoNotEnter from './Paginas Generales/Paginas de Juegos/DoNotEnter';
 
 const App: React.FC = () => {
   return (
@@ -24,6 +24,7 @@ const App: React.FC = () => {
         <Route path="/juegos/YEnElDescuento" element={<YEnElDescuento />} />
         <Route path="/juegos/YEnElEntretiempo" element={<YEnElEntretiempo />} />
         <Route path="/juegos/ElEspiaDelFutbol" element={<Elespia1 />} />
+        <Route path="/juegos/DoNotEnter" element={<DoNotEnter />} />
 
 
       </Routes>

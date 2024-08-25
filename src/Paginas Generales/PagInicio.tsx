@@ -18,9 +18,14 @@ const PagInicio: React.FC = () => {
         <Link to="/juegos" className="PagInicio-Button">
           <img src="./juegosboton.png" alt="Juegos" />
         </Link>
-        <Link to="/youtube" className="PagInicio-Button">
-          <img src="./youtubeboton.png" alt="youtube" />
-        </Link>
+        <a
+          href="https://www.youtube.com/@josephfiter5187"
+          className="PagInicio-Button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./youtubeboton.png" alt="YouTube" />
+        </a>
         <Link to="/mods" className="PagInicio-Button">
           <img src="./modsboton.png" alt="Mods" />
         </Link>

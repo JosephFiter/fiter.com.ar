@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import GameModal from './GameModalEntretiempo';
+import GameModal from './GameModaldonot';
 import './css componentes/GameInfoDescuento.css';
 
 const GameInfoDescuento: React.FC = () => {
@@ -15,10 +15,10 @@ const GameInfoDescuento: React.FC = () => {
 
   return (
     <div className="GameInfo-Container">
-      <h1 className='tituloinfo'>Y En El Entretiempo</h1>
-      <img src="/logoentretiempo.png" alt="Y En El Descuento Logo" className="GameInfo-Logo" />
+      <h1 className='tituloinfo'></h1>
+      <img src="/donotenterlogo.png" alt="Y En El Descuento Logo" className="GameInfo-Logodo" />
       <p className='ponerblanco'>
-Descubre los misterios detrás de tu baneo en el servidor de Discord de z4 en "Y En El Entretiempo", la emocionante precuela de "Y En El Descuento".    </p>
+Un shooter en primera persona donde te enfrentaras a zombies, cocos y muñecos de madera en una isla embrujada.  </p>
       <button onClick={openModal} className="GameInfo-PlayButton">Jugar</button>
       {isModalOpen && <GameModal closeModal={closeModal} />}
     </div>

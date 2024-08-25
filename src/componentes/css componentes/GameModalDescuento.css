@@ -12,7 +12,7 @@
   }
   
   .GameModal-Content {
-    background: white;
+    background: #fff1f1;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -33,5 +33,13 @@
   .GameModal-Button img {
     width: 50px;
     height: auto;
+    margin-bottom: -1%;
   }
   
+  .GameModal-Descargas{
+    font-size: 1.5rem; /* Ajusta el tamaño del título según sea necesario */
+  color: #000000; /* Blanco */
+  padding: 0 20px; /* Añade padding a los lados para evitar que el texto toque el borde */
+  margin-top: -0.5%;
+  margin-bottom: -0.3%;
+  }

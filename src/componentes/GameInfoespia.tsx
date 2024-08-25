@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import GameModal from './GameModalDescuento';
+import GameModal from './GameModalEspia';
 import './css componentes/GameInfoDescuento.css';
 
 const GameInfoDescuento: React.FC = () => {
